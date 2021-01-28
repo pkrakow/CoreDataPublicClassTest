@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5455C325C06AF800979AC3 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5455C225C06AF800979AC3 /* TimerData.swift */; };
+		DA5455C825C06B1B00979AC3 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5455C725C06B1B00979AC3 /* SecondView.swift */; };
 		DA7696E825BFA7B9004FCE61 /* CoreDataPublicClassTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7696E725BFA7B9004FCE61 /* CoreDataPublicClassTestApp.swift */; };
 		DA7696EA25BFA7B9004FCE61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7696E925BFA7B9004FCE61 /* ContentView.swift */; };
 		DA7696EC25BFA7B9004FCE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7696EB25BFA7B9004FCE61 /* Assets.xcassets */; };
 		DA7696EF25BFA7B9004FCE61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7696EE25BFA7B9004FCE61 /* Preview Assets.xcassets */; };
 		DA7696FA25BFA7B9004FCE61 /* CoreDataPublicClassTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7696F925BFA7B9004FCE61 /* CoreDataPublicClassTestTests.swift */; };
 		DA76970525BFA7B9004FCE61 /* CoreDataPublicClassTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76970425BFA7B9004FCE61 /* CoreDataPublicClassTestUITests.swift */; };
+		DA76971625BFA7FE004FCE61 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76971525BFA7FE004FCE61 /* Persistence.swift */; };
+		DA76971B25BFA9F2004FCE61 /* HabitCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76971A25BFA9F2004FCE61 /* HabitCoreData.swift */; };
+		DAF214E525C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAF214E325C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA5455C225C06AF800979AC3 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		DA5455C725C06B1B00979AC3 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		DA7696E425BFA7B9004FCE61 /* CoreDataPublicClassTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPublicClassTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7696E725BFA7B9004FCE61 /* CoreDataPublicClassTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPublicClassTestApp.swift; sourceTree = "<group>"; };
 		DA7696E925BFA7B9004FCE61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,9 @@
 		DA76970025BFA7B9004FCE61 /* CoreDataPublicClassTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPublicClassTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA76970425BFA7B9004FCE61 /* CoreDataPublicClassTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPublicClassTestUITests.swift; sourceTree = "<group>"; };
 		DA76970625BFA7B9004FCE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA76971525BFA7FE004FCE61 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DA76971A25BFA9F2004FCE61 /* HabitCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCoreData.swift; sourceTree = "<group>"; };
+		DAF214E425C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPublicClassTest.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				DA7696E725BFA7B9004FCE61 /* CoreDataPublicClassTestApp.swift */,
+				DA76971525BFA7FE004FCE61 /* Persistence.swift */,
+				DA76971A25BFA9F2004FCE61 /* HabitCoreData.swift */,
 				DA7696E925BFA7B9004FCE61 /* ContentView.swift */,
+				DA5455C725C06B1B00979AC3 /* SecondView.swift */,
+				DA5455C225C06AF800979AC3 /* TimerData.swift */,
 				DA7696EB25BFA7B9004FCE61 /* Assets.xcassets */,
 				DA7696F025BFA7B9004FCE61 /* Info.plist */,
 				DA7696ED25BFA7B9004FCE61 /* Preview Content */,
+				DAF214E325C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodeld */,
 			);
 			path = CoreDataPublicClassTest;
 			sourceTree = "<group>";
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5455C825C06B1B00979AC3 /* SecondView.swift in Sources */,
+				DA76971625BFA7FE004FCE61 /* Persistence.swift in Sources */,
+				DAF214E525C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodeld in Sources */,
+				DA76971B25BFA9F2004FCE61 /* HabitCoreData.swift in Sources */,
 				DA7696EA25BFA7B9004FCE61 /* ContentView.swift in Sources */,
 				DA7696E825BFA7B9004FCE61 /* CoreDataPublicClassTestApp.swift in Sources */,
+				DA5455C325C06AF800979AC3 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +600,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAF214E325C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAF214E425C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodel */,
+			);
+			currentVersion = DAF214E425C06806006B3E30 /* CoreDataPublicClassTest.xcdatamodel */;
+			path = CoreDataPublicClassTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA7696DC25BFA7B9004FCE61 /* Project object */;
 }
